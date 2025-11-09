@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
@@ -14,54 +13,53 @@
 		<link rel="stylesheet" href="./fonts/fonts.css" />
 		<link rel="stylesheet" href="./styles/variables.css" />
 		<link rel="stylesheet" href="./styles/globals.css" />
-		<link rel="stylesheet" href="./styles/style.css" />
-		<link rel="stylesheet" href="./styles/dark.css" />
-		<link rel="stylesheet" href="./styles/light.css" />
-		<link rel="stylesheet" href="./styles/script.js" />
-		<title>Сложно сосредоточиться</title>
-		<script src="./scripts/script.js"></script>
+		<link rel="stylesheet" href="./styles/layout.css" />
+		<link rel="stylesheet" href="./styles/dark-theme.css" />
+		<link rel="stylesheet" href="./styles/light-theme.css" />
+		<title>Фокус и концентрация</title>
+		<script src="./scripts/theme-manager.js"></script>
 	</head>
-	<body class="page">
-		<header class="header decorated-zone full-viewport">
-			<div aria-hidden="true" class="header__decoration">
-				<span class="header__decoration-text">Rec</span>
+	<body class="page-layout">
+		<header class="page-header corner-decoration full-viewport">
+			<div aria-hidden="true" class="rec-label">
+				<span class="rec-text">Rec</span>
 			</div>
-			<nav class="header__theme-menu">
-				<ul class="header__theme-menu-list">
-					<li class="header__theme-menu-item">
+			<nav class="theme-switcher">
+				<ul class="theme-list">
+					<li class="theme-item">
 						<button
-							class="header__theme-menu-button header__theme-menu-button_type_light">
+							class="theme-button theme-button-light">
 							день
 						</button>
 					</li>
-					<li class="header__theme-menu-item">
+					<li class="theme-item">
 						<button
-							class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+							class="theme-button theme-button-active theme-button-auto"
 							disabled>
 							авто
 						</button>
 					</li>
-					<li class="header__theme-menu-item">
-						<button class="header__theme-menu-button header__theme-menu-button_type_dark">
+					<li class="theme-item">
+						<button class="theme-button theme-button-dark">
 							неон
 						</button>
 					</li>
 				</ul>
 			</nav>
-			<h1 class="header__masthead masthead">no focus</h1>
-			<p class="header__text title-decor">
+			<h1 class="main-title">no focus</h1>
+			<p class="header-description accent-background">
 				Что делать, когда не можешь делать ничего <br />
 				Или почему нам так сложно сконцентрироваться, особенно когда очень надо
 			</p>
 		</header>
-		<main class="main">
-			<section id="causes" class="main__section">
-				<h2 class="main__section-title">Почему сосредоточиться так сложно</h2>
-				<ul class="main__section-list">
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h3 class="main__card-title title-decor">Многозадачность</h3>
-							<p class="main__card-text">
+		<main class="main-content">
+			<section id="causes" class="content-section">
+				<h2 class="section-heading">Почему сосредоточиться так сложно</h2>
+				<ul class="section-list">
+					<li class="list-item">
+						<article class="content-card">
+							<h3 class="card-heading accent-background">Многозадачность</h3>
+							<p class="card-text">
 								Особенно сложно сосредоточиться, когда задач много и все они — важные. Где
 								же легендарная многозадачность, когда она так нужна вам (и всем нанимающим
 								менеджерам этого мира)? А дело в том, что её просто не существует.
@@ -74,10 +72,10 @@
 							</p>
 						</article>
 					</li>
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h3 class="main__card-title title-decor">Дофамин</h3>
-							<p class="main__card-text">
+					<li class="list-item">
+						<article class="content-card">
+							<h3 class="card-heading accent-background">Дофамин</h3>
+							<p class="card-text">
 								С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей
 								невозможности сосредоточиться замешана и полная противоположность стрессу
 								— дофамин. Это вещество участвует в системе вознаграждения мозга. Причём
@@ -91,13 +89,13 @@
 				</ul>
 			</section>
 
-			<section id="distractions" class="main__section">
-				<h2 class="main__section-title">Что снижает концентрацию внимания?</h2>
-				<ul class="main__section-list">
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h3 class="main__card-title title-decor">Многозадачность</h3>
-							<p class="main__card-text">
+			<section id="distractions" class="content-section">
+				<h2 class="section-heading">Что снижает концентрацию внимания?</h2>
+				<ul class="section-list">
+					<li class="list-item">
+						<article class="content-card">
+							<h3 class="card-heading accent-background">Многозадачность</h3>
+							<p class="card-text">
 								Как концентрация может снижаться из-за… концентрации? Любая стрессовая
 								ситуация (и резко меняющийся мир в целом) заставляет наш мозг постоянно
 								«сканировать» окружающую среду на предмет опасности. Например, читать
@@ -107,10 +105,10 @@
 							</p>
 						</article>
 					</li>
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h3 class="main__card-title title-decor">Еда</h3>
-							<p class="main__card-text">
+					<li class="list-item">
+						<article class="content-card">
+							<h3 class="card-heading accent-background">Еда</h3>
+							<p class="card-text">
 								«Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно доставляют
 								в мозг энергию и помогают ему лучше работать. Но уходит эта энергия также
 								быстро, как и приходит. А мы в результате попадаем на «углеводные качели»:
@@ -119,13 +117,13 @@
 							</p>
 						</article>
 					</li>
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h3 class="main__card-title title-decor">Гаджеты</h3>
-							<p class="main__card-text">
+					<li class="list-item">
+						<article class="content-card">
+							<h3 class="card-heading accent-background">Гаджеты</h3>
+							<p class="card-text">
 								Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках
 								— подкаст, а на компьютере фоном — ещё и видео с забавными утятами. В
-								результате мозг пытается переключиться с одной задачи на другую — и просто
+								результате мозг пытается переключиться с одной задачи на другаую — и просто
 								не может. А чтобы вернуться к состоянию полной концентрации, человеку в
 								среднем нужно 20 минут. Вот и получается, что чем больше времени мы
 								проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к
@@ -136,20 +134,20 @@
 				</ul>
 			</section>
 
-			<section id="solutions" class="main__section">
-				<h2 class="main__section-title">
+			<section id="solutions" class="content-section">
+				<h2 class="section-heading">
 					Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)
 				</h2>
-				<h3 class="main__section-subtitle title-decor">
+				<h3 class="section-subtitle accent-background">
 					5 простых (на самом деле не очень) советов
 				</h3>
-				<ul class="main__section-list">
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h4 class="main__card-title main__card-title_thin title-decor">
+				<ul class="section-list">
+					<li class="list-item">
+						<article class="content-card">
+							<h4 class="card-heading card-heading-thin accent-background">
 								Представьте небо и облака
 							</h4>
-							<p class="main__card-text">
+							<p class="card-text">
 								Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
 								успокоиться. Ведь часто именно тревожные мысли о сложных задачах как раз и
 								мешают эти сложные задачи делать. В такие моменты можно закрыть глаза и
@@ -160,12 +158,12 @@
 							</p>
 						</article>
 					</li>
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h4 class="main__card-title main__card-title_thin title-decor">
+					<li class="list-item">
+						<article class="content-card">
+							<h4 class="card-heading card-heading-thin accent-background">
 								Включите музыку
 							</h4>
-							<p class="main__card-text">
+							<p class="card-text">
 								Но не любую, и не любимую. Любимая может быть связана с сильными
 								положительными эмоциями, которые тоже очень сильно отвлекают. Подойдёт
 								тихая, спокойная, умеренно-ритмичная. Можно вообще попробовать включить
@@ -173,32 +171,32 @@
 							</p>
 						</article>
 					</li>
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h4 class="main__card-title main__card-title_thin title-decor">
+					<li class="list-item">
+						<article class="content-card">
+							<h4 class="card-heading card-heading-thin accent-background">
 								Прогуляйтесь
 							</h4>
-							<p class="main__card-text">
+							<p class="card-text">
 								Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
 								<a
 									target="_blank"
 									href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
-									class="marked_text"
+									class="highlighted-text"
 									>показал</a
 								>, что созерцание природы повышает концентрацию, в то время как после
 								просмотра городских пейзажей она наоборот понижается. Можно совместить
-								прогулку с физическими упражнениями или бегом — так в мозг поступит ещё
+								прогулки с физическими упражнениями или бегом — так в мозг поступит ещё
 								больше кислорода и он будет лучше работать. Но и простая двадцатиминутная
-								прогулка — тоже отличный вариант.
+								прогулки — тоже отличный вариант.
 							</p>
 						</article>
 					</li>
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h4 class="main__card-title main__card-title_thin title-decor">
+					<li class="list-item">
+						<article class="content-card">
+							<h4 class="card-heading card-heading-thin accent-background">
 								Хорошо ешьте
 							</h4>
-							<p class="main__card-text">
+							<p class="card-text">
 								Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые
 								препятствуют резким скачкам сахара в крови. Например, с высоким
 								содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица, фасоль),
@@ -206,10 +204,10 @@
 							</p>
 						</article>
 					</li>
-					<li class="main__section-list-item">
-						<article class="main__card">
-							<h4 class="main__card-title main__card-title_thin title-decor">Читайте</h4>
-							<p class="main__card-text">
+					<li class="list-item">
+						<article class="content-card">
+							<h4 class="card-heading card-heading-thin accent-background">Читайте</h4>
+							<p class="card-text">
 								Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
 								прочитать пост в соцсети, достаточно нескольких минут или даже секунд. А
 								вот интересная книга способна затянуть и на несколько часов и круто
@@ -220,49 +218,49 @@
 				</ul>
 			</section>
 
-			<section id="gallery" class="main__section">
-				<h2 class="main__section-subtitle title-decor">А можно в картинках?</h2>
-				<div class="main__collage">
-					<div class="main__collage-image" id="sunset">
+			<section id="gallery" class="content-section">
+				<h2 class="section-subtitle accent-background">А можно в картинках?</h2>
+				<div class="image-grid">
+					<div class="grid-item" id="sunset-image">
 						<img
 							loading="lazy"
-							class="main__collage-image-item"
+							class="grid-image"
 							src="./images/sunset.png"
 							alt="Солнце заходит за горы" />
 					</div>
-					<div class="main__collage-image" id="ice-cream">
+					<div class="grid-item" id="ice-cream-image">
 						<img
 							loading="lazy"
-							class="main__collage-image-item"
+							class="grid-image"
 							src="./images/ice-cream.png"
 							alt="Мороженное в пиале" />
 					</div>
-					<div class="main__collage-image" id="tape">
+					<div class="grid-item" id="tape-image">
 						<img
 							loading="lazy"
-							class="main__collage-image-item"
+							class="grid-image"
 							src="./images/tape.png"
 							alt="Кассета" />
 					</div>
-					<div class="main__collage-image" id="books">
+					<div class="grid-item" id="books-image">
 						<img
 							loading="lazy"
-							class="main__collage-image-item"
+							class="grid-image"
 							src="./images/books.png"
 							alt="Стопка книг" />
 					</div>
-					<div class="main__collage-image" id="street">
+					<div class="grid-item" id="street-image">
 						<img
 							loading="lazy"
-							class="main__collage-image-item"
+							class="grid-image"
 							src="./images/street.png"
 							alt="Улица" />
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer class="footer decorated-zone full-viewport">
-			<h2 class="masthead">focus</h2>
+		<footer class="page-footer corner-decoration full-viewport">
+			<h2 class="main-title">focus</h2>
 		</footer>
 	</body>
 </html>
