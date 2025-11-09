@@ -1,44 +1,35 @@
-
-.theme-dark:root {
-	--text-button: #ff0070;
-	--border-button: 255, 0, 112;
-
-	--text-masthead: #db00ff;
-	--shadow-masthead: #ff0070;
-
-	--text-accent: #ff0070;
-	--text-primary: #000028;
-	--text-secondary: #f1b2ce;
-
-	--bg-accent: #ff0070;
-	--bg-primary: #000028;
-
-	--bg-hero-image: url('../images/cover-image-dark.png');
+.theme-dark .header__decoration {
+  display: block;
 }
 
-.theme-dark .header__decoration {
-	display: block;
+.theme-dark:root {
+  --bg-hero-image: url('../images/cover-image-dark.png');
+  --text-masthead: #db00ff;
+  --shadow-masthead: #ff0070;
+  --text-button: #ff0070;
+  --border-button: 255, 0, 112;
+  --text-accent: #ff0070;
+  --text-primary: #000028;
+  --text-secondary: #f1b2ce;
+  --bg-accent: #ff0070;
+  --bg-primary: #000028;
 }
 
 @media (prefers-color-scheme: dark) {
-	.header__decoration {
-		display: block;
-	}
+  :root {
+    --bg-hero-image: url('../images/cover-image-dark.png');
+    --text-masthead: #db00ff;
+    --shadow-masthead: #ff0070;
+    --text-button: #ff0070;
+    --border-button: 255, 0, 112;
+    --text-accent: #ff0070;
+    --text-primary: #000028;
+    --text-secondary: #f1b2ce;
+    --bg-accent: #ff0070;
+    --bg-primary: #000028;
+  }
 
-	:root {
-		--text-button: #ff0070;
-		--border-button: 255, 0, 112;
-
-		--text-masthead: #db00ff;
-		--shadow-masthead: #ff0070;
-
-		--text-accent: #ff0070;
-		--text-primary: #000028;
-		--text-secondary: #f1b2ce;
-
-		--bg-accent: #ff0070;
-		--bg-primary: #000028;
-
-		--bg-hero-image: url('../images/cover-image-dark.png');
-	}
+  .header__decoration {
+    display: block;
+  }
 }
